@@ -2,10 +2,10 @@ Preliminaries:
 Understanding and Visualization of the data sets 
 
 Completed: 
-
+2. SMOTE
 Working on: 
 1. TSNE 
-2. SMOTE
+
 
 Next To do:
 3. Classifier Selection 
