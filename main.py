@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 ## Edit 1 By Pawan Sapkota Sharma 
 
 dataset = pd.read_csv("./dataset/creditcard.csv")
-sample_data = sample_data = dataset.sample(frac = 0.5, random_state = 1)
+sample_data = dataset.sample(frac = 0.5, random_state = 1)
 x = sample_data.drop(['Class', 'Time'], axis = 1)
 y = sample_data['Class']
 x_train , x_test , y_train, y_test = train_test_split(x,y,test_size= 0.6, random_state=12)
