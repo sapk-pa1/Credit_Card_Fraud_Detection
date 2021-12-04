@@ -11,7 +11,7 @@ def visualize_data(data_needed_for_viz):
     sample_data, valid, fraud, v_features = data_needed_for_viz
     #bar plot for the valid and the fraud cases 
     x = ["Valid", "Fraud"]
-    y = [valid.size, fraud.size]
+    y = [valid.shape[0], fraud.shape[0]]
     fig, ax = plt.subplots()
     plt.yticks([0,500000,1000000,4000000,5000000])
     ax.bar(x, y, color = ('green', 'red'))
