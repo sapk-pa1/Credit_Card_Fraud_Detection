@@ -16,6 +16,7 @@ def visualize_data(sample_data):
     plt.ylabel("No of Transactions")
     Labels = ["Valid", "Fraud"]
     plt.xticks(range(2), Labels)
+    ## Keeping the text in the bar plot 
     for i in range(len(Labels)):
         plt.text(i,transactions[i],str(transactions[i]), ha = 'center', va = 'bottom', color = 'black')
     plt.show()
