@@ -7,18 +7,15 @@ import warnings
 warnings.filterwarnings('ignore')
 #ignoreing all the futture warnings 
 
-def visualize_data(data_needed_for_viz):
-    sample_data, valid, fraud, v_features = data_needed_for_viz
+def visualize_data(sample_data):
     #bar plot for the valid and the fraud cases 
-    x = ["Valid", "Fraud"]
-    y = [valid.shape[0], fraud.shape[0]]
-    fig, ax = plt.subplots()
-    plt.yticks([0,500000,1000000,4000000,5000000])
-    ax.bar(x, y, color = ('green', 'red'))
-    ax.set(title= "Credit Card Transaction Types", ylabel = "No of Transactions")
-
-    #Text rakheko ho tyo plot ko top ma 
-    for i in range(len(x)):
-        plt.text(i,y[i],str(y[i]), ha= "center", va= 'bottom', color ='black' )
+    transactions = pd.value_counts(sample_data['Class'], sort = True)
+    transactions.plot(kind = 'bar', color = 'g')
+    plt.title("Valid and Fraud Transactions")
+    plt.xlabel("Class")
+    plt.ylabel("No of Transactions")
+    Labels = ["Valid", "Fraud"]
+    plt.xticks(range(2), Labels)
+    for i in range(len(Labels)):
+        plt.text(i,transactions[i],str(transactions[i]), ha = 'center', va = 'bottom', color = 'black')
     plt.show()
-    fig, ax = plt.subplots(1, 2, figsize=(18,4))
