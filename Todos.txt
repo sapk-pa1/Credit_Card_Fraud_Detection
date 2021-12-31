@@ -5,7 +5,7 @@ Completed:
 2. SMOTE
 Working on: 
 1. TSNE 
+3. Classifier for the Preprocessed data , probably use the isolation forest but need more research
 
 
 Next To do:
-3. Classifier Selection 
