@@ -2,6 +2,7 @@ import pandas as pd
 from visualization import visualize_data 
 from smote import oversampling
 from sklearn.model_selection import train_test_split
+from TSNE import dim_reduc
 
 
 ## main file for the project 
@@ -21,4 +22,5 @@ print("Fraud Cases = "+ str(fraud.size))
 # "V14","V15","V16","V17","V18","V19","V20","V21","V22","V23","V24","V25","V26","V27","V28"]
 # data_needed_for_visualization = [sample_data, valid, fraud, v_features]
 visualize_data(sample_data)
+dim_reduc(x)
 oversampling(x_train, y_train)
