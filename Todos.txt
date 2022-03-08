@@ -3,9 +3,13 @@ Understanding and Visualization of the data sets
 
 Completed: 
 2. SMOTE
-Working on: 
-1. TSNE 
-3. Classifier for the Preprocessed data , probably use the isolation forest but need more research
+3. Classifier using Random Forest. 
 
+Working on: 
 
 Next To do:
+
+Ploting the curve for the classification AUC and ROC curve. 
+
+About AUC and ROC curve 
+https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc
