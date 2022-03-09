@@ -4,12 +4,15 @@ Understanding and Visualization of the data sets
 Completed: 
 2. SMOTE
 3. Classifier using Random Forest. 
+4 . Ploting the curve for the classification AUC and ROC curve. 
+
 
 Working on: 
+Tunning the hyperparameters for the Random Forest 
 
 Next To do:
-
-Ploting the curve for the classification AUC and ROC curve. 
+Reading : 
+https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 
 About AUC and ROC curve 
 https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc
