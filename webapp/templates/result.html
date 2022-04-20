@@ -29,11 +29,11 @@
     <div class="results">
       {% if prediction == 0 %}
       <h1 style="color: green">
-          According to our model, the provided transaction is NOT a Fraud transaction.
+          According to our model, the provided transaction is a Legit.
       </h1>
       {% elif prediction == 1 %}
       <h2 style="color: red">
-          According to our model, this transaction is a Fraud transaction.
+          According to our model, this transaction is a Fraud.
       </h2>
       {% endif %}
     </div>
